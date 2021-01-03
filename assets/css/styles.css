@@ -1,0 +1,81 @@
+/*===== VARIABLES CSS =====*/
+:root {
+  --text-color: #251d1e;
+  --body-color: #fefbfb;
+}
+
+/*========== Variables Dark theme ==========*/
+body.dark-theme {
+  --body-color: #251d1e;
+  --text-color: #fefbfb;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.home__img {
+  width: 280px;
+  justify-self: center;
+}
+
+.home__title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  margin-bottom: 1.5rem;
+}
+
+/*========== BUTTONS ==========*/
+.button {
+  display: inline-block;
+  background-color: #da2535;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 5rem 2rem 0;
+    margin: auto;
+  }
+
+  .home__img {
+    width: 100%;
+    order: 1;
+  }
+}
